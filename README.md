@@ -1,6 +1,38 @@
+# image-crawler-s3-transform
+
+# 🚀 image-crawler will download an image using a URL or Data URL and upload it to an s3 bucket with a 20px placeholder version for the Nextjs image component. 🚀
+
+https://github.com/coding-to-music/image-crawler-s3-transform
+
+From / By https://github.com/larbisahli/image-crawler
+
+## Environment variables:
+
+```java
+SPACES_BUCKET_NAME=?
+SPACES_BUCKET_ENDPOINT=.digitaloceanspaces.com
+SPACES_ACCESS_KEY_ID=?
+SPACES_ACCESS_SECRET_KEY=?
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/image-crawler-s3-transform.git
+git push -u origin main
+```
+
 ## Usage with Next.js
 
-image-crawler will download an image using a URL or Data URL and upload it to an s3 bucket with a 20px placeholder version of the original image, and then we will convert the 20px image to a base64 for the Nextjs image component placeholder.
+image-crawler will download an image using a URL or Data URL and upload it to an
+s3 bucket with a 20px placeholder version of the original image, and then we
+will convert the 20px image to a base64 for the Nextjs image component
+placeholder.
 
 Download and upload an image using a url:
 
@@ -18,7 +50,7 @@ const PrintResults = async () => {
     title
   );
 
-  return { image, placeholder, error } 
+  return { image, placeholder, error }
 };
 
 PrintResults();
