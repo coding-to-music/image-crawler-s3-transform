@@ -68,11 +68,13 @@ PrintResults();
   },
   error: undefined
 }
+
 ```
 
 Using the placeholder in Nextjs Image component:
 
 ```typescript
+
 // ImageComponent.ts
 import Image, { ImageProps } from 'next/image';
 import React, { memo, useEffect, useState } from 'react';
