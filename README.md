@@ -1,5 +1,7 @@
 # image-crawler-s3-transform
 
+Does not work, incomplete example of using DigitalOcean spaces rather than S3.
+
 # 🚀 image-crawler will download an image using a URL or Data URL and upload it to an s3 bucket with a 20px placeholder version for the Nextjs image component. 🚀
 
 https://github.com/coding-to-music/image-crawler-s3-transform
