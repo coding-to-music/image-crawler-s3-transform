@@ -1,6 +1,6 @@
 // server.js
 
-import UploadImageByUrl from './src/upload.js';
+import UploadImageByUrl from './src/upload.ts';
 
 const PrintResults = async () => {
   const url = 'https://ae01.alicdn.com/kf/HTB13gJEKeGSBuNjSspbq6AiipXaM.jpg';
