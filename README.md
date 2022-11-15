@@ -13,6 +13,13 @@ SPACES_BUCKET_NAME=?
 SPACES_BUCKET_ENDPOINT=.digitaloceanspaces.com
 SPACES_ACCESS_KEY_ID=?
 SPACES_ACCESS_SECRET_KEY=?
+
+
+
+
+
+
+
 ```
 
 ## GitHub
@@ -67,11 +74,13 @@ PrintResults();
   },
   error: undefined
 }
+
 ```
 
 Using the placeholder in Nextjs Image component:
 
 ```typescript
+
 // ImageComponent.ts
 import Image, { ImageProps } from 'next/image';
 import React, { memo, useEffect, useState } from 'react';
