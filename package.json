@@ -2,6 +2,7 @@
   "name": "image-crawler-s3-transform",
   "version": "1.5.0",
   "main": "dist/upload.js",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
