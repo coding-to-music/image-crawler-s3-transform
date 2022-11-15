@@ -145,7 +145,7 @@ const ImageComponent = (props: Props) => {
 export default memo(ImageComponent);
 ```
 
-First, install all dependencies for the project:
+## First, install all dependencies for the project:
 
 ```bash
 yarn install
@@ -155,4 +155,60 @@ Second, run the development server:
 
 ```bash
 yarn dev
+```
+
+## Getting errors when running -
+
+### I needed to create the file index.js,
+
+### this is not a complete working example
+
+```
+node index.js
+```
+
+Output
+
+```
+node:internal/errors:464
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /mnt/volume_nyc1_01/image-crawler-s3-transform/src/upload.ts
+    at new NodeError (node:internal/errors:371:5)
+    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:87:11)
+    at defaultGetFormat (node:internal/modules/esm/get_format:102:38)
+    at defaultLoad (node:internal/modules/esm/load:21:14)
+    at ESMLoader.load (node:internal/modules/esm/loader:359:26)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:280:58)
+    at new ModuleJob (node:internal/modules/esm/module_job:66:26)
+    at ESMLoader.#createModuleJob (node:internal/modules/esm/loader:297:17)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:261:34)
+    at async ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:81:21) {
+  code: 'ERR_UNKNOWN_FILE_EXTENSION'
+}
+```
+
+```
+node index.js
+```
+
+Output
+
+```
+node:internal/errors:464
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/mnt/volume_nyc1_01/image-crawler-s3-transform/src/upload' imported from /mnt/volume_nyc1_01/image-crawler-s3-transform/index.js
+    at new NodeError (node:internal/errors:371:5)
+    at finalizeResolution (node:internal/modules/esm/resolve:418:11)
+    at moduleResolve (node:internal/modules/esm/resolve:983:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1080:11)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:530:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:251:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:79:40)
+    at link (node:internal/modules/esm/module_job:78:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
 ```
